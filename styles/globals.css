@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#gallery_outer{
+  height:500px;
+  width:100%;
+  overflow:hidden;
+}
+
+#gallery_inner{
+  height:520px;
+  width:100%;
+  overflow-x:scroll;
+  box-sizing: content-box;
+}
+

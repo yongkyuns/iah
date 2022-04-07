@@ -35,7 +35,7 @@ const Navbar = (props: any) => {
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
-        borderStyle={"solid"}
+        borderStyle={"none"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
@@ -182,7 +182,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
+      {/* <Flex
         py={2}
         as={Link}
         href={href ?? "#"}
@@ -207,7 +207,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
             h={6}
           />
         )}
-      </Flex>
+      </Flex> */}
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
@@ -240,41 +240,31 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Photography",
-    href: "#",
-    // children: [
-    //   {
-    //     label: "Explore Design Work",
-    //     subLabel: "Trending Design to inspire you",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "New & Noteworthy",
-    //     subLabel: "Up-and-coming Designers",
-    //     href: "#",
-    //   },
-    // ],
+    href: "/photography",
   },
   {
     label: "Art Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    href: "/art",
   },
   {
     label: "About",
-    href: "#",
+    href: "/about",
   },
   {
     label: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ];
+
+// children: [
+//   {
+//     label: "Explore Design Work",
+//     subLabel: "Trending Design to inspire you",
+//     href: "#",
+//   },
+//   {
+//     label: "New & Noteworthy",
+//     subLabel: "Up-and-coming Designers",
+//     href: "#",
+//   },
+// ],

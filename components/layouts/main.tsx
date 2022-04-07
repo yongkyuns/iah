@@ -5,7 +5,7 @@ import { Box, Container } from "@chakra-ui/react";
 import Footer from "../Footer";
 // import VoxelDogLoader from "../voxel-dog-loader";
 
-const Main = ({ children, router }: { children: any; router: any }) => {
+const Layout = ({ children, router }: { children: any; router: any }) => {
   return (
     <Box as="main">
       {/* <Head>
@@ -36,4 +36,4 @@ const Main = ({ children, router }: { children: any; router: any }) => {
   );
 };
 
-export default Main;
+export default Layout;

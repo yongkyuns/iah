@@ -9,8 +9,8 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Box my={6} align="center">
-        <NextLink href="/art" passHref>
+      <Box my={6} textAlign="center">
+        <NextLink href="/photography" passHref>
           <Button colorScheme="teal">Return to home</Button>
         </NextLink>
       </Box>
